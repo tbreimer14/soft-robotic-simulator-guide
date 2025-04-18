@@ -50,12 +50,53 @@ Skip this step if you already have Python 3.10 installed.
 
 ### Run Examples
 
-1. Run a CMA-ES demo
+1. Run a test example
+`cd evogym/tutorials`
+`python3 visualize_simple_env.py`
+
+2. Run a CMA-ES demo
 `cd cmaes-demo`
 `python3 run.py`
 
-2. Run a test example
-`cd evogym/tutorials`
-`python3 visualize_simple_env.py`
+## Windows
+
+1. [Install VSCode](https://code.visualstudio.com/) (Allows for easy management of python virtual environments)
+
+2. [Install GitHub Desktop](https://desktop.github.com/download/) (Allows for easy cloning of repositories)
+
+3. [Install Python 3.10](https://www.python.org/downloads/release/python-31010/)
+
+4. [Install Git](https://git-scm.com/downloads/win)
+
+### Run Examples
+
+#### Basic Test
+
+1. Open GitHub Desktop
+
+2. Click on "File > Clone repository"
+
+3. Clone by URL: "https://github.com/EvolutionGym/evogym.git"
+
+4. Click "Open in Visual Studio Code"
+
+5. Open the Command Palette
+
+6. Search for the "Python: Create Environment" command
+
+7. Choose "Python 3.10.0 64-bit"
+
+8. Open the terminal (Ctrl + `)
+
+9. Run `pip install -r "requirements.txt"`
+
+10. Run `pip install evogym`
+
+11. Run `python /tutorials/visualize_simple_env.py`
+
+#### CMA-ES Demo
+
+
+
 
 
