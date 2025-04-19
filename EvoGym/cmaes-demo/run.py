@@ -33,6 +33,7 @@ SIGMA = 2
 # Files
 ENV_FILENAME = "simple_environment.json"
 ROBOT_FILENAME = "small_bot.json"
+THIS_DIR = os.path.dirname(os.path.realpath(__file__))
 
 def run_simulation(iters, genome, show=True):
     """
@@ -48,12 +49,11 @@ def run_simulation(iters, genome, show=True):
     Returns:
         float: The fitness of the genome.
     """
-
     # Create world
-    world = EvoWorld.from_json(os.path.join('world_data', ENV_FILENAME))
+    world = EvoWorld.from_json(os.path.join(THIS_DIR, 'world_data', ENV_FILENAME))
 
     # Add robot
-    robot = WorldObject.from_json(os.path.join('world_data', ROBOT_FILENAME))
+    robot = WorldObject.from_json(os.path.join(THIS_DIR, 'world_data', ROBOT_FILENAME))
 
     world.add_from_array(
         name='robot',
